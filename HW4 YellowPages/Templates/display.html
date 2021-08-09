@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+   <title>Company Info</title>
+
+ <style>
+   body{
+    background-image: url('/static/bg.png');
+   }
+
+  a:link, a:visited {
+  background-color:rgba(14, 13, 13, 0.884);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
+
+  a:hover, a:active {
+  background-color: red;
+  }
+
+ </style>
+
+ </head>
+ <body>
+ <h1 style="color:rgb(7, 7, 7)">Company  Details</h1><br>
+
+ <table align="center" cellspacing = "2" cellpadding = "13" border = "10" width="700" >
+
+ <thead>
+ <td>Company Name</td>
+ <td>Phone</td>
+ <td>Email Id</td>
+ <td>Address</td>
+ </thead>
+ {% for row in rows %}
+ <tr>
+ <td>{{row["Company_Name"]}}</td>
+ <td>{{row["Phone"]}}</td>
+ <td>{{row["Email"]}}</td>
+ <td>{{row["Address"]}}</td>
+ </tr>
+ {% endfor %}   
+ </table>
+ <br><br>
+ <a href="/">Go back to home page</a>
+ </body>
+ </html> 
+ 

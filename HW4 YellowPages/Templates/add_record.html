@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Add Record</title>
+
+  <style>
+      body{
+        
+        background-image: url('/static/bg.png');
+     }
+
+   input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   }
+
+   input[type=submit] {
+
+    width: 100%;
+    background-color: rgba(14, 13, 13, 0.884);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   }
+
+   input[type=submit]:hover {
+    background-color: rgb(21, 153, 43);
+   }
+   
+
+
+    a:link, a:visited {
+      background-color:rgba(14, 13, 13, 0.884);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    }
+
+    a:hover, a:active {
+    background-color: red;
+}
+
+
+  </style>
+ </head>
+ <body>
+ <h1>Add Record</h1>
+ <form action = "/saverecord" method="post">
+
+ <table align="center" cellspacing = "2" cellpadding = "13" border = "10" width="700">
+
+  <tr><td>Company Name</td><td><input type="text" name="name" ></td></tr>
+  <tr><td>Phone</td><td><input type="text" name="ph"></td></tr>
+  <tr><td>Email Id</td><td><input type="text" name="email"></td></tr>
+  <tr><td>Address</td><td><input type="text" name="add"></td></tr>
+
+  <tr><td></td><td><input type="submit" value="Submit"></td></tr>
+
+ </table>
+ </form>
+ <a href="/">Go back to home page</a>
+ </body>
+ </html>  
